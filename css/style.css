@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* THe CSS box sizing property allows us to in clude the padding and
+ border in an element's total width and height, add this rule to your 'reset .css'*/
+
+
+*{
+    margin-left: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+/* Basic page container */
+body {
+    font-family: "Nunito", sans-serif;
+    background-color: #f0f0f0f0;
+    
+}
+
+/* ---------------------------------- */
+/* Header                             */
+/* ---------------------------------- */
+
+
+.hero-banner{
+    display: flex;  
+    height: 50px;
+    background-color: #580aa5;
+    justify-content: space-between;
+    align-items: center;  
+    color: white;
+}
+
+p{
+    margin-left: 165px;
+}
+
+nav ul {
+    
+    display: flex;  
+    list-style-type: none;        
+    margin: 0;                   
+    padding: 0;   
+    margin-right: 165px;                 
+                
+}
+nav ul li {
+    margin-left: 20px;           
+}
+
+nav ul li a {
+    color: white;                 
+    text-decoration: none;      
+    font-size: 16px;  
+              
+}
+
+
+/* ---------------------------------- */
+/* Main                            */
+/* ---------------------------------- */
+
+
+
+main {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card i {
+    font-size: 24px;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 50%;  
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+    margin-left: 10px;
+    margin-right: 90px;
+}
+
+.card p span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.fa-user {
+    color: #4B88A2;
+    background-color: rgba(75, 136, 162, 0.2);   
+}
+
+.fa-pen-nib {
+    color: #74C69D;
+    background-color: rgba(116, 198, 157, 0.2);
+}
+
+.fa-comment {
+    color: #EF476F;
+    background-color: rgba(239, 71, 111, 0.2);
+}
+
+.fa-users {
+    color: #FF595E;
+    background-color: rgba(255, 89, 94, 0.2);
+}
+
+.fa-eye {
+    color: #9D4EDD;
+    background-color: rgba(157, 78, 221, 0.2);
+}
+
+.fa-calendar-check {
+    color: #F4A261;
+    background-color: rgba(244, 162, 97, 0.2);
+}
+
+
+   
+/* ---------------------------------- */
+/* Footer                           */
+/* ---------------------------------- */    
+
+
+footer {
+    background-color: rgb(227, 225, 225);       
+    color:rgb(50, 48, 48);                  
+    padding: 20px 0;               
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .container {
+    display: flex;                 
+    justify-content: space-between;
+    align-items: center;            
+    max-width: 1200px;            
+    margin: 0 auto;                
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+footer .social-links a {
+    color: rgb(177, 21, 21);                  
+    margin-left: 0px;             
+    text-decoration: none;         
+    font-size: 30px;   
+    
+         
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    background-color:rgba(237, 235, 235, 0.8); 
+    color: white; 
+    font-size: 10px; 
+    margin-right: 10px;
+}
+
+
+footer .social-links a:hover {
+    color: #007BFF;                
+}
+
+footer p {
+    margin: 0;                     
+    font-size: 14px;     
+    margin-right: 0px;          
+}
+
+
+
+
+i {
+    color: rgb(62, 59, 59);            
+    font-size: 24px;         
+    margin-right: 0px;     
+}
+
+i:hover {
+    color: #007BFF;         
+}
